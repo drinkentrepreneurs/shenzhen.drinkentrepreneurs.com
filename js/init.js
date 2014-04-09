@@ -1,7 +1,7 @@
 //==============================================================================
-function initCountdownEN(year, month, day, hour) {
+function initCountdownEN(year, month, day, hour, min) {
   
-  var start = new Date(year, month - 1, day, hour);      
+  var start = new Date(year, month - 1, day, hour, min || 0);      
   
   setInterval(function() {
     var t = start - new Date();
@@ -24,9 +24,9 @@ function initCountdownEN(year, month, day, hour) {
 }
 
 //==============================================================================
-function initCountdownCN(year, month, day, hour) {
+function initCountdownCN(year, month, day, hour, min) {
   
-  var start = new Date(year, month - 1, day, hour);      
+  var start = new Date(year, month - 1, day, hour, min || 0);      
   
   setInterval(function() {
     var t = start - new Date();
